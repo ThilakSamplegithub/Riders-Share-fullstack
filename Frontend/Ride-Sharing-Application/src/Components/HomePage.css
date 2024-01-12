@@ -1,0 +1,1000 @@
+.inputImage {
+    background-image: url("https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_3147,h_691/v1613521692/assets/d9/ce6c00-32b0-4b93-9f0d-6f927d93da08/original/Rider_Home_bg_desktop2x.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    align-items: center;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    align-items: center;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  
+  header div ul {
+    display: inline;
+    align-items: center;
+    margin-top: 8px;
+    margin-left: 20px;
+  }
+  
+  header div ul li {
+    display: inline;
+    margin-left: 8px;
+    padding: 8px;
+    transition: all 0.3s;
+    border-radius: 20px;
+  }
+  
+  header div ul li:hover {
+    background: #333;
+    transition: all 0.3s;
+  }
+  
+  header div ul li a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .arrow-company {
+    font-size: 10px;
+  }
+  
+  .icon-header-right {
+    font-size: 15px;
+  }
+  
+  .sign-up-header {
+    background: white;
+    border-radius: 30px;
+    transition: background 0.3s;
+  }
+  
+  .sign-up-header:hover {
+    background: #ddd;
+    transition: background 0.3s;
+  }
+  
+  .sign-up-header a {
+    color: black;
+  }
+  
+  header img {
+    max-height: 32px;
+  }
+  
+  .left-header-div {
+    padding-left: 110px;
+    display: flex;
+  }
+  
+  .right-header-div {
+    padding-right: 110px;
+    display: flex;
+  }
+  
+  .links-show-small {
+    display: none;
+  }
+  
+  .hamb {
+    width: 13px;
+    height: 2px;
+    background-color: white;
+    position: relative;
+    top: 15px;
+    left: 15px;
+  }
+  
+  .hamb:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    top: 7px;
+  }
+  
+  .sign-up-small-header {
+    margin-right: 12px;
+  }
+  
+  .a-hamb {
+    border-radius: 50%;
+    transition: background 0.3s;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .a-hamb:hover {
+    background: #333;
+    transition: background 0.3s;
+  }
+  
+  .navi-toggle {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: none;
+    background: white;
+    z-index: 2;
+  }
+  
+  .navi-toggle a {
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  .navi-toggle li {
+    margin: 30px;
+    list-style: none;
+  }
+  
+  .products-navi-toggle {
+    background: #eee;
+    text-align: center;
+    padding: 10px;
+    margin: 80px 20px 0 20px;
+  }
+  
+  .products-navi-toggle a {
+    font-size: 1.4rem;
+    margin: 10px;
+  }
+  
+  .language-navi-toggle {
+    margin: 20px 0 0 20px;
+  }
+  
+  .language-navi-toggle a {
+    font-size: 1rem;
+  }
+  
+  #hamburguer i {
+    color: white;
+    position: relative;
+    top: 12px;
+    left: 15px;
+  }
+  
+  .navi-toggle-products {
+    display: none;
+    position: fixed;
+    background: white;
+    width: 100%;
+    z-index: 2;
+    height: 100%;
+  }
+  
+  .navi-toggle-products ul {
+    -webkit-box-shadow: 0 4px 6px -6px black;
+    -moz-box-shadow: 0 4px 6px -6px black;
+    box-shadow: 0 4px 6px -6px black;
+  }
+  
+  .navi-toggle-products li {
+    border-bottom: 1px solid #eee;
+  }
+  
+  .navi-toggle-products li:hover {
+    background: #efefef;
+  }
+  
+  .navi-toggle-products a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+  }
+  
+  .navi-toggle-products i {
+    font-size: 1.2rem;
+    margin: 16px;
+    width: 26px;
+  }
+  
+  .subnav {
+    position: absolute;
+    background: #eee;
+    width: 200px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    max-height: 300px;
+    overflow: auto;
+    top: 62px;
+    display: none;
+  }
+  
+  .subnav ul {
+    margin: 0;
+  }
+  
+  .subnav li {
+    display: block;
+    background: #eee;
+    cursor: pointer;
+    border-radius: 0;
+    margin: 0;
+    padding-left: 12px;
+  }
+  
+  .subnav li:hover {
+    background: #ddd;
+  }
+  
+  .subnav li:hover a {
+    color: black;
+  }
+  
+  .subnav a {
+    color: #888;
+  }
+  
+  .subnav-products {
+    -webkit-box-shadow: 0 4px 6px -6px black;
+    -moz-box-shadow: 0 4px 6px -6px black;
+    box-shadow: 0 4px 6px -6px black;
+    background: white;
+  }
+  
+  .subnav-products li {
+    border-bottom: 1px solid #eee;
+    background: white;
+  }
+  
+  .subnav-products li:hover {
+    background: #efefef;
+  }
+  
+  .subnav-products a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+  }
+  
+  .subnav-products i {
+    font-size: 1.2rem;
+    margin: 10px 20px 10px 10px;
+    width: 16px;
+  }
+  
+  .language-toggle {
+    padding-top: 80px;
+    height: 100%;
+    position: fixed;
+    display: none;
+    background: white;
+    width: 100%;
+    z-index: 2;
+  }
+  
+  .close-language-toggle {
+    text-align: right;
+    font-size: 2rem;
+  }
+  
+  .close-language-toggle i {
+    margin-right: 10px;
+    padding: 20px;
+    height: 29px;
+    width: 29px;
+    border-radius: 50px;
+  }
+  
+  .close-language-toggle i:hover {
+    background: #eee;
+    cursor: pointer;
+  }
+  
+  .language-toggle h2 {
+    font-size: 3rem;
+    font-family: system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding-bottom: 3rem;
+  }
+  
+  .language-toggle button {
+    border: 0;
+    width: 300px;
+    height: 60px;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 20px;
+    cursor: pointer;
+    background: white;
+    margin-right: 25px;
+  }
+  
+  .language-toggle button:hover {
+    background: #eee !important;
+    transition: background 0.5s ease-in;
+  }
+  
+  .language-buttons {
+    padding-left: 30px;
+  }
+  
+  .active-language {
+    background: #eee !important;
+  }
+  
+  .covid-monitor {
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 10%;
+    background: #eff3fe;
+  }
+  
+  .covid-monitor i {
+    cursor: pointer;
+  }
+  
+  .covid-monitor h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+  
+  .covid-monitor h4 {
+    font-weight: 500;
+  }
+  
+  .covid-monitor a {
+    color: black;
+    transition: all 0.3s ease-in;
+  }
+  
+  .covid-monitor a:hover {
+    color: #666;
+    transition: all 0.3s ease-in;
+  }
+  
+  .covid-monitor h2,
+  h4 {
+    margin-bottom: 15px;
+  }
+  
+  /* .signup {
+    background-image: url("../imgs/earner_home.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px 10%;
+    -webkit-transition: background-image 0.4s ease-in-out;
+    transition: background-image 0.4s ease-in-out;
+  } */
+  
+  .signup-box {
+    width: 45%;
+    background: white;
+  }
+  
+  .signup-choices {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .signup-choices i {
+    font-size: 22px;
+  }
+  
+  .signup-choices div {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .signup-options {
+    width: 15%;
+    cursor: pointer;
+  }
+  
+  .signup-options div {
+    margin-bottom: 15px;
+  }
+  
+  .sign-info {
+    border-top: 1px solid #ccc;
+    padding: 50px;
+  }
+  
+  .sign-info h2 {
+    font-size: 3.2rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 10px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+  }
+  
+  .sign-info p {
+    margin: 20px 0 20px 0;
+  }
+  
+  .link-underline-inline {
+    color: black;
+    margin-right: 20px !important;
+    text-decoration: none;
+    position: relative;
+    white-space: nowrap;
+  }
+  
+  .link-underline-inline::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    top: 22px;
+    right: 0;
+    background: #ccc;
+  }
+  
+  .link-underline-inline::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    top: 22px;
+    right: 0;
+    background: black;
+    transition: width 0.4s ease;
+    -webkit-transition: width 0.4s ease;
+  }
+  
+  .link-underline-inline:hover::after {
+    width: 100%;
+    left: 0;
+    background: black;
+  }
+  
+  .sign-info input {
+    width: 100%;
+    border: none;
+    background: #f6f6f6;
+    height: 50px;
+    margin-bottom: 20px;
+    padding-left: 30px;
+  }
+  
+  .sign-info input::placeholder {
+    font-size: 1rem;
+  }
+  
+  .sign-info input::-moz-placeholder {
+    font-size: 1rem;
+  }
+  
+  .sign-info input:active {
+    border: none;
+    outline: none;
+  }
+  
+  .sign-info input:focus {
+    border: none;
+    outline: none;
+  }
+  
+  .signup-choices-wrapper hr {
+    background: black;
+    height: 0.25rem;
+    width: 12%;
+    transition: 0.3s ease-in-out;
+    margin-left: 10%;
+  }
+  
+  .stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .ride-input {
+    position: relative;
+  }
+  
+  .ride-input .input-icon-left {
+    position: absolute;
+    top: 19px;
+    left: 10px;
+    font-size: 9px;
+  }
+  
+  .vertical-line {
+    position: absolute;
+    height: 55px;
+    width: 0.5px;
+    background-color: black;
+    top: 30px;
+    left: 13.5px;
+    z-index: 1;
+  }
+  
+  .ride-input .fa-location-arrow {
+    position: absolute;
+    top: 19px;
+    right: 0;
+    color: #ccc;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  
+  .ride-input .fa-location-arrow:hover {
+    color: black;
+  }
+  
+  .btn-dark {
+    margin: 20px 20px 20px 0;
+    display: inline;
+    border: none;
+    background: black;
+    color: white;
+    padding: 16px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+  }
+  
+  .btn-dark:hover {
+    background: #232323;
+    transition: all 0.2s ease-in;
+  }
+  
+  .btn-light {
+    margin: 20px 20px 20px 0;
+    display: inline;
+    border: none;
+    padding: 16px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background: #f7f7f7 !important;
+    color: black !important;
+    transition: all 0.2s ease-in !important;
+  }
+  
+  .btn-light:hover {
+    background: #e2e2e2 !important;
+    transition: all 0.2s ease-in !important;
+    transition: all 0.2s ease-in !important;
+  }
+  
+  .business {
+    background-image: url('https://www.uber-assets.com/image/upload/v1614379346/assets/f4/63ca3e-b0d7-4463-988f-a2fead503ddc/original/DotCom_Update_U4B_bg_mobileD.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; /* Center the background image */
+    padding-left: max(5%, 30px);
+    padding-top: 70px;
+  }
+  
+  
+  .business p {
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+  }
+  
+  .business button {
+    margin-bottom: 70px;
+  }
+  
+  .title {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin: 20px 0;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+  }
+  
+  .description {
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    margin: 20px 0;
+    text-align: justify;
+  }
+  
+  .safety {
+    margin: 5%;
+  }
+  
+  .safety-cards {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 30px;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .safety-cards {
+      grid-template-columns: 100%;
+      gap: 0px;
+    }
+  }
+  
+  .safety-cards div {
+    margin-bottom: 40px;
+  }
+  
+  .safety-cards img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .safety-cards-icons {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    gap: 33px;
+  }
+  
+  @media only screen and (max-width: 1135px) {
+    .safety-cards-icons {
+      grid-template-columns: 50% 50%;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .safety-cards-icons {
+      grid-template-columns: 100%;
+      margin-top: 40px;
+      gap: 50px;
+    }
+  }
+  
+  .safety-cards-icons i {
+    font-size: 1.3rem;
+  }
+  
+  .download {
+    padding: 5%;
+    background: #f4f4f4;
+  }
+  
+  .download-cards {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 30px;
+  }
+  
+  @media only screen and (max-width: 1135px) {
+    .download-cards {
+      grid-template-columns: 100%;
+      gap: 0px;
+    }
+  }
+  
+  .download-card {
+    display: grid;
+    padding: 30px;
+    margin-bottom: 50px;
+    background: white;
+    border: 1px solid #ccc;
+    grid-template-columns: 160px auto 10px;
+    gap: 20px;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .download-card:hover i {
+    transform: translate(10px, 0);
+    transition: transform 0.3s linear;
+  }
+  
+  .download-card img {
+    width: 160px;
+    height: auto;
+  }
+  
+  @media only screen and (max-width: 1135px) {
+    .download-card {
+      grid-template-columns: 100px auto 20px;
+      padding: 15px;
+    }
+  
+    .download-card img {
+      width: 100px;
+    }
+  }
+  
+  .download-card i {
+    font-size: 1.3rem;
+    transition: transform 0.3s linear;
+  }
+  
+  .download-card p {
+    font-size: 1.6rem;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+  }
+  
+  .arrow-signup {
+    margin: 5%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 30px;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .arrow-signup {
+      grid-template-columns: 100%;
+      gap: 0px;
+    }
+  }
+  
+  .arrow-signup-div {
+    display: grid;
+    grid-template-columns: auto 30px;
+    border-bottom: 1px solid black;
+    padding: 20px 0;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .arrow-signup-div:hover {
+    color: #666;
+  }
+  
+  .arrow-signup-div:hover .arrow-signup-icons-div {
+    animation-name: translatearrow;
+    animation-duration: 0.8s;
+  }
+  
+  footer {
+    background: black;
+    color: white;
+    padding: 100px 60px 35px 60px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+  }
+  
+  footer div {
+    margin-bottom: 40px;
+  }
+  
+  footer .logo {
+    height: 40px;
+    width: auto;
+  }
+  
+  .footer-visit-link {
+    color: white;
+    text-decoration: none;
+    padding-bottom: 10px;
+  }
+  
+  .footer-visit-link:hover {
+    border-bottom: 1px solid white;
+  }
+  
+  .footer-themes {
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    margin-top: 100px;
+  }
+  
+  @media only screen and (max-width: 1135px) {
+    .footer-themes {
+      grid-template-columns: 40% 60%;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .footer-themes {
+      grid-template-columns: 100%;
+    }
+  }
+  
+  .footer-themes h2 {
+    font-size: 1.3rem;
+  }
+  
+  .footer-themes li {
+    list-style: none;
+    margin: 15px 0;
+  }
+  
+  .footer-themes a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .footer-themes a:hover {
+    color: #777;
+  }
+  
+  @keyframes translatearrow {
+    from {
+      transform: translate(-60px, 0);
+    }
+    to {
+      transform: translate(0, 0);
+    }
+  }
+  
+  .arrow-signup-icons-div {
+    position: absolute;
+    right: -90px;
+    top: 30%;
+  }
+  
+  .arrow-signup-div i {
+    font-size: 1.8rem;
+    padding-right: 35px;
+  }
+  
+  .footer-social {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 25% 25% 50%;
+  }
+  
+  @media only screen and (max-width: 1135px) {
+    .footer-social {
+      grid-template-columns: 100%;
+    }
+  }
+  
+  .footer-social a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-icon-text {
+    display: inline;
+  }
+  
+  @media only screen and (max-width: 1135px) {
+    .footer-icon-text {
+      display: block;
+    }
+  }
+  
+  .footer-icon-text p {
+    display: inline;
+  }
+  
+  .footer-social img {
+    height: 40px;
+    width: auto;
+  }
+  
+  @media only screen and (max-width: 1135px) {
+    .footer-social img {
+      height: 60px;
+    }
+  }
+  
+  .footer-social-icons a {
+    padding: 15px;
+  }
+  
+  @media only screen and (max-width: 1135px) {
+    .footer-social-icons a {
+      margin-right: 15px;
+    }
+  }
+  
+  .footer-social-icons a:hover {
+    background: #333;
+  }
+  
+  .stores {
+    text-align: right;
+  }
+  
+  @media only screen and (max-width: 1135px) {
+    .stores {
+      text-align: left;
+    }
+  }
+  
+  .footer-privacy {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  @media only screen and (max-width: 1135px) {
+    .footer-privacy {
+      display: block;
+    }
+  }
+  
+  .footer-privacy p {
+    color: #999;
+    font-size: 0.8rem;
+  }
+  
+  .footer-privacy li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  @media only screen and (max-width: 1135px) {
+    .footer-privacy li {
+      margin-right: 60px;
+    }
+  }
+  
+  .footer-privacy a {
+    color: #999;
+    font-size: 0.8rem;
+    text-decoration: none;
+  }
+  
+  .footer-privacy a:hover {
+    color: #555;
+  }
+  
+  @media only screen and (max-width: 1135px) {
+    .links-hide-small {
+      display: none;
+    }
+  
+    .links-show-small {
+      display: block;
+    }
+  
+    .left-header-div {
+      padding-left: 20px;
+    }
+  
+    .right-header-div {
+      padding-right: 30px;
+    }
+  
+    .language-toggle button {
+      display: block;
+      width: 100%;
+      margin-top: 10px;
+    }
+  
+    .signup {
+      padding: 0;
+    }
+  
+    .signup-box {
+      position: block;
+      width: 100%;
+      background: white;
+      margin: 0;
+    }
+  
+    .signup-choices-wrapper {
+      width: 40%;
+    }
+  
+    .signup-choices {
+      margin: 0 10%;
+      width: 80%;
+    }
+  
+    .sign-info h2 {
+      font-size: 2.6rem;
+    }
+  
+    .img-signup {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+  

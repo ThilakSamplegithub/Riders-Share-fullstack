@@ -1,0 +1,35 @@
+/* .App {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.map-container {
+  flex: 1;
+  position: relative;
+  z-index: 1;
+}
+
+.content-container {
+  flex: 1;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 2;
+  display: flex;
+
+} */
+
+/* Additional styles for Chakra UI components */
+.date-picker-wrapper {
+  margin-top: 10px;
+}
+Td{
+  text-align: center;
+  background-color: aliceblue;
+}
+Th{
+  background-color: black;
+  color: rgb(255, 255, 255);
+}
