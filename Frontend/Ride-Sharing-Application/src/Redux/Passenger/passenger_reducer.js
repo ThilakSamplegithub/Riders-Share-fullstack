@@ -2,7 +2,7 @@ import { PASSENGER_DROPPED, PASSENGER_FAILURE, PASSENGER_LOGINSUCCESS, PASSENGER
 
 const initialState={
 isLoading:false,
-isAuth:false,
+isAuth2:false,
 driver:[],
 isStatus:false,
 isError:false
@@ -21,7 +21,7 @@ switch(type){
     }
     case PASSENGER_LOGINSUCCESS:{
          console.log(payload,"is payload")
-        return {...state,isLoading:false,isAuth:payload}
+        return {...state,isLoading:false,isAuth2:payload}
     }
     case PASSENGER_RIDE_REQUEST:{
      return {...state,isLoading:false}
@@ -42,7 +42,7 @@ switch(type){
         return {...state,isLoading:false,isStatus:false}
     }
     case PASSENGER_LOGOUT:{
-        return {...state,isLoading:false,isAuth:false}
+        return {...state,isLoading:false,isAuth2:false}
     }
     default:{
         return state
