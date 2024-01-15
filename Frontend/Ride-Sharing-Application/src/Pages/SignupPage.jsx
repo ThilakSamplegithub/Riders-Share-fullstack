@@ -18,7 +18,7 @@ import {
   Select,useToast
 } from "@chakra-ui/react";
 import { handleRegister } from "../Redux/Passenger/actions";
-import { useState, useReducer } from "react";
+import { useState, useReducer,useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { ViewIcon, ViewOffIcon } from "@chakra-ui/icons";
 import {
@@ -82,6 +82,27 @@ export default function SignupPage() {
   const dispatch2 = useDispatch();
   const { name, email, password, gender, phoneNumber, location } = state;
   console.log(state, "is state outside function");
+  const[isValid,setIsvalid]=useState(`Password is not valid`)
+  function validatePassword(password){
+    console.log('inside validate password')
+    if(password.length<6){
+      setIsvalid(`Password must be minimum of 6 characters`)
+    }else if(!/[A-Z]/.test(password)){
+      setIsvalid(`password must contain atleast 1 uppercase character`)
+    }else if(!/[a-z]/.test(password)){
+      setIsvalid(`password must contain atleast 1 lowercase character`)
+    }else if(!/[0-9]/.test(password)){
+      setIsvalid(`password must contain atleast singl number from 0 to 9`)
+    }else if(!/[!@$#%6&*()_+\-]/.test(password)){
+      setIsvalid(`password must contain atleast 1 special character`)
+    }else{
+      setIsvalid(`password is valid`)
+    }
+  }
+   useEffect(()=>{
+    console.log('invoked me')
+    validatePassword(password)
+   },[password])
   function handlPost(e) {
     console.log('function invoked')
     console.log(e);
@@ -183,6 +204,7 @@ export default function SignupPage() {
                   </Button>
                 </InputRightElement>
               </InputGroup>
+              <Text fontSize={12}>{isValid}</Text>
             </FormControl>
             <FormControl>
               <FormLabel>location</FormLabel>
